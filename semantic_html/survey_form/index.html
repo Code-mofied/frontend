@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill this form appropriately</p>
+    <form id="survey-form">
+        <label id="name-label"> Name:
+            <input required id="name" type="text" placeholder="enter your name">
+        </label><br><br>
+        <label id="email-label"> Email:
+            <input required id="email" type="email" placeholder="enter your Email">
+        </label><br><br>
+        <label id="number-label"> Age:
+            <input required id="number" type="number" min="1" max="100" placeholder="age">
+        </label>
+            <p>Which option best describes your current role</p>
+        <select id="dropdown">
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time learner</option>
+            <option value="Prefernot">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+  <label for="recommendation" id="recommendation"> <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input required id="recommendation" type="radio" name="recommendation" value="recommendation" checked> Yes
+            <input required id="recommendation" type="radio" name="recommendation" value="recommendation"> No
+            <input required id="recommendation" type="radio" name="recommendation" value="recommendation"> Maybe
+        </label><br><br>
+        <p>What is your favourite feature of freecodecamp</p>
+  <input type="checkbox" id="recommendation" name="recommendation" value="recommendation">accesibility
+   <input type="checkbox" id="recommendation" name="recommendation" value="recommendation">user friendly
+    <input type="checkbox" id="recommendation" name="recommendation" value="recommendation">stacked curriculum<br><br>
+    <label for="comment"> Comment:
+    <textarea name="comment" rows="5" cols="40"></textarea>
+    </label>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
